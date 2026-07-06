@@ -111,7 +111,7 @@ class PhishingAnalyzer:
             else:
                 body = msg.get_payload(decode=True).decode(errors='ignore')
 
-            iocs = self.extract_iocs(body + subject + sender)
+            iocs = self.extract_iocs("\n".join([body, subject, sender]))
 
             malicious_count = 0
             suspicious_count = 0
@@ -236,7 +236,7 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
             html = """
 <!DOCTYPE html>
-<html><head><title>Phishing Analyzer</title><style>
+<html><head><title>Soc-Phish — Phishing Analyzer</title><style>
 body{font-family:sans-serif;max-width:1000px;margin:50px auto;background:#0a0e27;color:#e0e0e0;padding:20px}
 .container{background:#1a1f3a;border:1px solid #444;padding:20px;border-radius:8px}
 h1{color:#ff6b6b;margin:0}
@@ -252,7 +252,7 @@ th,td{text-align:left;padding:8px;border-bottom:1px solid #444}
 th{background:#3d4758;color:#ff6b6b}
 </style></head><body>
 <div class="container">
-<h1>Phishing Analyzer</h1>
+<h1>Soc-Phish <span style="font-weight:400;opacity:.6;font-size:.6em">Phishing Analyzer</span></h1>
 <p>Upload .eml file or paste email raw text</p>
 <form id="form" onsubmit="return submit_form()">
 <input type="file" id="file" accept=".eml" placeholder="Email file (.eml)">
