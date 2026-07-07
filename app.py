@@ -237,19 +237,19 @@ class Handler(BaseHTTPRequestHandler):
             html = """
 <!DOCTYPE html>
 <html><head><title>Soc-Phish — Phishing Analyzer</title><style>
-body{font-family:sans-serif;max-width:1000px;margin:50px auto;background:#0a0e27;color:#e0e0e0;padding:20px}
-.container{background:#1a1f3a;border:1px solid #444;padding:20px;border-radius:8px}
-h1{color:#ff6b6b;margin:0}
-input,textarea{width:100%;padding:10px;margin:10px 0;background:#2d3748;border:1px solid #555;color:#e0e0e0;border-radius:4px}
-button{background:#ff6b6b;color:white;padding:10px 20px;border:none;border-radius:4px;cursor:pointer;font-weight:bold}
-button:hover{background:#ff5252}
-.result{margin-top:20px;padding:15px;background:#2d3748;border-radius:4px;border-left:4px solid}
-.malicious{border-left-color:#ff6b6b}
-.suspicious{border-left-color:#ffd93d}
-.clean{border-left-color:#6bcf7f}
+body{font-family:sans-serif;max-width:1000px;margin:50px auto;background:#0d1117;color:#e6edf3;padding:20px}
+.container{background:#161b22;border:1px solid #30363d;padding:20px;border-radius:8px}
+h1{color:#58a6ff;margin:0}
+input,textarea{width:100%;padding:10px;margin:10px 0;background:#1c2128;border:1px solid #30363d;color:#e6edf3;border-radius:4px}
+button{background:#58a6ff;color:white;padding:10px 20px;border:none;border-radius:4px;cursor:pointer;font-weight:bold}
+button:hover{background:#388bfd}
+.result{margin-top:20px;padding:15px;background:#1c2128;border-radius:4px;border-left:4px solid}
+.malicious{border-left-color:#58a6ff}
+.suspicious{border-left-color:#d29922}
+.clean{border-left-color:#3fb950}
 table{width:100%;border-collapse:collapse;margin:10px 0}
-th,td{text-align:left;padding:8px;border-bottom:1px solid #444}
-th{background:#3d4758;color:#ff6b6b}
+th,td{text-align:left;padding:8px;border-bottom:1px solid #30363d}
+th{background:#21262d;color:#58a6ff}
 </style></head><body>
 <div class="container">
 <h1>Soc-Phish <span style="font-weight:400;opacity:.6;font-size:.6em">Phishing Analyzer</span></h1>
