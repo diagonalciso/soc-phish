@@ -23,3 +23,8 @@ See `.env.example` for all variables.
 ## Integration
 
 All services feed findings to SOCint intelligence platform and can push alerts to SOCops.
+
+
+## Documentation
+
+See **[MANUAL.md](MANUAL.md)** for the full manual (overview, configuration, endpoints, integration, troubleshooting). In the running dashboard, click the **`?` Help button** in the top-right corner to open it at `/manual`.
