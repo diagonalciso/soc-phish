@@ -238,7 +238,7 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
             html = """
 <!DOCTYPE html>
-<html><head><title>Soc-Phish — Phishing Analyzer</title><style>
+<html><head><title>SOC Phish — Phishing Analyzer</title><style>
 body{font-family:sans-serif;max-width:1000px;margin:50px auto;background:#0d1117;color:#e6edf3;padding:20px}
 .container{background:#161b22;border:1px solid #30363d;padding:20px;border-radius:8px}
 h1{color:#58a6ff;margin:0}
@@ -254,7 +254,7 @@ th,td{text-align:left;padding:8px;border-bottom:1px solid #30363d}
 th{background:#21262d;color:#58a6ff}
 </style></head><body><a href="/manual" target="_blank" title="Manual / Help" style="position:fixed;top:12px;right:14px;z-index:99999;width:30px;height:30px;border-radius:50%;background:#161b22;border:1px solid #30363d;color:#58a6ff;font:700 16px/30px system-ui,sans-serif;text-align:center;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.4)" onmouseover="this.style.borderColor='#58a6ff'" onmouseout="this.style.borderColor='#30363d'">?</a>
 <div class="container">
-<h1>Soc-Phish <span style="font-weight:400;opacity:.6;font-size:.6em">Phishing Analyzer</span></h1>
+<h1>SOC Phish <span style="font-weight:400;opacity:.6;font-size:.6em">Phishing Analyzer</span></h1>
 <p>Upload .eml file or paste email raw text</p>
 <form id="form" onsubmit="return submit_form()">
 <input type="file" id="file" accept=".eml" placeholder="Email file (.eml)">
