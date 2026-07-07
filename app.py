@@ -238,7 +238,7 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
             html = """
 <!DOCTYPE html>
-<html><head><title>SOC Phish — Phishing Analyzer</title><style>
+<html><head><title>SOC Phish — Phishing Analyzer</title><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎣</text></svg>"><style>
 body{font-family:sans-serif;max-width:1000px;margin:50px auto;background:#0d1117;color:#e6edf3;padding:20px}
 .container{background:#161b22;border:1px solid #30363d;padding:20px;border-radius:8px}
 h1{color:#58a6ff;margin:0}
@@ -431,7 +431,7 @@ def _md_to_html(md):
 def _manual_page(inner):
     return ("""<!DOCTYPE html><html><head><meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>Manual</title><style>
+<title>Manual</title><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎣</text></svg>"><style>
 :root{--bg:#0d1117;--sf:#161b22;--bd:#30363d;--tx:#e6edf3;--mut:#8b949e;--ac:#58a6ff}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);
 font:15px/1.65 -apple-system,Segoe UI,Roboto,sans-serif}
