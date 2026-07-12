@@ -1,5 +1,7 @@
 # Project
 
+> Email parser + IOC extraction
+
 Standalone threat intelligence and security monitoring service.
 
 ## Quick Start
