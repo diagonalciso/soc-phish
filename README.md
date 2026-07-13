@@ -2,6 +2,11 @@
 
 > Email parser + IOC extraction
 
+<p align="center">
+  <img src="docs/screenshot.png" alt="soc-phish dashboard screenshot" width="100%">
+</p>
+
+
 Standalone threat intelligence and security monitoring service.
 
 ## Quick Start
